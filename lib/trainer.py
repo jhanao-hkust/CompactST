@@ -90,8 +90,6 @@ class trainer(object):
 
             val_loss = self.eval_model(epoch)
             val_loss_list.append(val_loss)
-            
-            self.test_model()
 
             if val_loss < min_val_loss:
                 wait = 0
